@@ -31,10 +31,10 @@ $INCLUDE_CONVERTER_DECLARATION
         typedef std::basic_string<QUEX_TYPE_CHARACTER> __string;
 
         operator 
-        const std::string() const
+        std::string() const
         { return get_string(); }
 
-        const std::string
+        std::string
         get_string() const 
         {
             std::string             tmp;
@@ -46,7 +46,7 @@ $INCLUDE_CONVERTER_DECLARATION
             return tmp;
         }
     
-        const std::string 
+        std::string 
         pretty_char_text() const
         /* Provides a somehow pretty-print of the text in the token. */
         {
@@ -61,7 +61,7 @@ $INCLUDE_CONVERTER_DECLARATION
         }
 
 #       if ! defined(__QUEX_OPTION_WCHAR_T_DISABLED)
-        const std::wstring 
+        std::wstring 
         pretty_wchar_text() const
         {
             std::wstring             tmp = $CONVERTER_WSTRING(self.text);
