@@ -342,4 +342,9 @@ QUEX_NAMESPACE_MAIN_CLOSE
 #include <quex/code_base/temporary_macros_off>
 
 $$ADDITIONAL_HEADER_CONTENT$$
+
+/* START: User defined header content end-_____________________________________*/
+$$USER_DEFINED_HEADER_END$$
+/* END: _______________________________________________________________________*/
+
 #endif /* __QUEX_INCLUDE_GUARD__ANALYZER__GENERATED__$$INCLUDE_GUARD_EXTENSION$$ */

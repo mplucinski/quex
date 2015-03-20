@@ -265,6 +265,11 @@ initial_mode = CodeFragment_NULL
 header = CodeFragment_NULL
 
 #-----------------------------------------------------------------------------------------
+# header_end : code fragment that is to be pasted at the end of header file
+#-----------------------------------------------------------------------------------------
+header_end = CodeFragment_NULL
+
+#-----------------------------------------------------------------------------------------
 # class_body_extension: code fragment that is to be pasted inside the class definition
 #                       of the lexical analyser class.
 #-----------------------------------------------------------------------------------------
@@ -292,6 +297,7 @@ memento_unpack_extension = CodeFragment_NULL
 
 fragment_db = {
     "header":         "header",
+    "header_end":     "header_end",
     "body":           "class_body_extension",
     "init":           "class_constructor_extension",
     "memento":        "memento_class_extension",

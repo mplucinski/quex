@@ -88,6 +88,7 @@ def do(ModeDB):
                 ["$$TOKEN_ID_DEFINITION_FILE$$",         Setup.get_file_reference(token_id_definition_file)],
                 ["$$CORE_ENGINE_CHARACTER_CODING$$",     quex_converter_coding_name_str],
                 ["$$USER_DEFINED_HEADER$$",              Lng.SOURCE_REFERENCED(blackboard.header) + "\n"],
+                ["$$USER_DEFINED_HEADER_END$$",          Lng.SOURCE_REFERENCED(blackboard.header_end) + "\n"],
              ])
 
     return txt
