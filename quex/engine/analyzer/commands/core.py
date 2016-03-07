@@ -258,7 +258,6 @@ class AccepterContent:
     """
 
     def __init__(self):
-        Command.__init__(self)
         self.__list = []
 
     def clone(self):
@@ -449,7 +448,6 @@ class RouterContent:
     ___________________________________________________________________________
     """
     def __init__(self):
-        Command.__init__(self)
         self.__list = []
 
     def clone(self):
@@ -519,7 +517,6 @@ class RouterOnStateKeyContent:
     ___________________________________________________________________________
     """
     def __init__(self):
-        Command.__init__(self)
         self.mega_state_index = -1
         self.__list = []
 
